@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Katalog Unit Terkurasi | Absoora Residence Samata Gowa</title>
-  <meta name="description" content="Katalog resmi unit siap huni Absoora Residence. Sisa 2 kavling eksklusif Tipe 90 (Kavling A-02 & B-05) dengan legalitas SHM pecah dan bebas seluruh biaya legalitas.">
+  <meta name="description" content="Katalog resmi unit siap huni Absoora Residence. Tersedia 2 kavling Tipe 90 (Kavling A-02 & B-05) dengan legalitas SHM pecah dan bebas seluruh biaya legalitas.">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -40,13 +40,13 @@
           Amankan Unit
         </a>
         <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle Menu">
-          ☰
+          <span class="ico" data-icon="menu"></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main style="padding: 3rem 0 5rem 0;">
+  <main class="page-main">
     <div class="container">
       <!-- Top Title & Inventory Status Metrics -->
       <div class="location-top-bar">
@@ -58,40 +58,37 @@
           </p>
         </div>
 
-        <!-- Metric Counters (24 Unit, 02 Unit Terakhir, SHM Clear) -->
+        <!-- Metric ringkas -->
         <div class="catalog-header-metrics">
           <div class="metric-item-block">
-            <div class="metric-label">Total Kavling</div>
-            <div class="metric-num">2 Unit</div>
+            <div class="metric-label">Total kavling</div>
+            <div class="metric-num">24 Unit</div>
           </div>
           <div class="metric-item-block">
-            <div class="metric-label">Tersedia Siap Huni</div>
-            <div class="metric-num" style="color: var(--color-accent-orange);">2 Unit Terakhir</div>
+            <div class="metric-label">Tersedia siap huni</div>
+            <div style="color: var(--color-accent-orange)" class="metric-num">2 Unit</div>
           </div>
           <div class="metric-item-block">
-            <div class="metric-label">Status Legalitas</div>
-            <div class="metric-num" style="color: var(--color-emerald); font-size: 1.3rem;">🛡️ SHM Clear</div>
+            <div class="metric-label">Status legalitas</div>
+            <div style="color: var(--color-emerald); font-size: var(--fs-lg)" class="metric-num"><span class="ico" data-icon="shield"></span>SHM Clear</div>
           </div>
         </div>
       </div>
 
-      <!-- Main Unit Showcase Card: Tipe 90 Eksklusif -->
+      <!-- Kartu unit Tipe 90 -->
       <div class="catalog-card">
         <div class="catalog-card-grid">
           <!-- Left: Image with Badges -->
           <div class="catalog-card-media">
-            <img src="assets/images/hero-front.jpg" alt="Fasad Tipe 90 Eksklusif">
-            <span class="badge badge-warning" style="position: absolute; top: 16px; left: 16px; background: #dc2626; color: #fff; border: none;">
-              Sisa 1 Unit!
-            </span>
-            <span class="badge badge-white" style="position: absolute; top: 16px; right: 16px; background: rgba(0,0,0,0.65); color: #fff;">
+            <img src="assets/images/hero-front.jpg" alt="Fasad Tipe 90">
+            <span style="position: absolute; top: 16px; right: 16px; background: rgba(0,0,0,0.65); color: var(--color-white)" class="badge badge-white">
               Kavling A-02 & B-05
             </span>
-            <span class="badge badge-dark" style="position: absolute; bottom: 16px; left: 16px; background: rgba(0,0,0,0.7); color: #fff;">
+            <span style="position: absolute; bottom: 16px; left: 16px; background: rgba(0,0,0,0.7); color: var(--color-white)" class="badge badge-dark">
               Hadap Taman Hijau
             </span>
-            <span class="badge badge-success" style="position: absolute; bottom: 16px; right: 16px;">
-              ✓ Ready Huni
+            <span style="position: absolute; bottom: 16px; right: 16px" class="badge badge-success">
+              <span class="ico" data-icon="check"></span>Ready Huni
             </span>
           </div>
 
@@ -107,42 +104,42 @@
 
               <!-- Price Box -->
               <div class="catalog-price-card">
-                <div style="font-size: 0.78rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase;">
+                <div class="eyebrow-label">
                   Harga Bersih All-in (KPR / Tunai)
                 </div>
-                <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 4px;">
-                  <span style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-dark);">Rp 777 Juta</span>
-                  <span style="font-size: 0.85rem; color: var(--color-emerald); font-weight: 700;">(Termasuk Biaya Notaris)</span>
+                <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 4px">
+                  <span class="catalog-price">Rp 777 juta</span>
+                  <span style="font-size: var(--fs-sm); color: var(--color-emerald); font-weight: 700">(Termasuk Biaya Notaris)</span>
                 </div>
               </div>
 
               <!-- Specs Row -->
               <div class="catalog-specs-row">
                 <div class="catalog-spec-cell">
-                  <div style="font-size: 0.72rem; color: var(--color-text-muted);">Kamar Tidur</div>
-                  <div style="font-size: 1rem; font-weight: 800; color: var(--color-primary-dark);">3 KT</div>
+                  <div class="meta-xs">Kamar Tidur</div>
+                  <div class="card-heading">3 KT</div>
                 </div>
                 <div class="catalog-spec-cell">
-                  <div style="font-size: 0.72rem; color: var(--color-text-muted);">Kamar Mandi</div>
-                  <div style="font-size: 1rem; font-weight: 800; color: var(--color-primary-dark);">2 KM</div>
+                  <div class="meta-xs">Kamar Mandi</div>
+                  <div class="card-heading">2 KM</div>
                 </div>
                 <div class="catalog-spec-cell">
-                  <div style="font-size: 0.72rem; color: var(--color-text-muted);">Carport</div>
-                  <div style="font-size: 1rem; font-weight: 800; color: var(--color-primary-dark);">1 Mobil</div>
+                  <div class="meta-xs">Carport</div>
+                  <div class="card-heading">1 Mobil</div>
                 </div>
                 <div class="catalog-spec-cell">
-                  <div style="font-size: 0.72rem; color: var(--color-text-muted);">LT / LB</div>
-                  <div style="font-size: 1rem; font-weight: 800; color: var(--color-primary-dark);">84 / 90 m²</div>
+                  <div class="meta-xs">LT / LB</div>
+                  <div class="card-heading">84 / 90 m²</div>
                 </div>
               </div>
             </div>
 
             <!-- Action Buttons requested: 'Lihat Galeri & Denah' -> Detail Unit; 'Amankan Unit via Whatsapp' -> WA -->
             <div class="catalog-actions-row">
-              <a href="detail-unit.html" class="btn btn-secondary" style="flex: 1;">
+              <a style="flex: 1" href="detail-unit.html" class="btn btn-secondary">
                 Lihat Galeri & Denah
               </a>
-              <a href="https://wa.me/6287890518616?text=Halo%20kak,,%20saya%20ingin%20amankan%20rumah%20tipe%2090%20Absoora%20Residence" target="_blank" rel="noopener noreferrer" class="btn btn-primary-green" style="flex: 1.2;">
+              <a style="flex: 1.2" href="https://wa.me/6287890518616?text=Halo%20kak,,%20saya%20ingin%20amankan%20rumah%20tipe%2090%20Absoora%20Residence" target="_blank" rel="noopener noreferrer" class="btn btn-primary-green">
                 Amankan Unit via WhatsApp
               </a>
             </div>
@@ -152,19 +149,19 @@
 
       <!-- Savings Box: Transparansi Bebas Biaya Legalitas & Fasilitas -->
       <div class="savings-box">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem">
           <div>
             <span class="badge badge-warning">Tanpa Biaya Terselubung</span>
-            <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--color-primary-dark); margin-top: 6px;">
+            <h3 style="font-size: var(--fs-lg); font-weight: 800; color: var(--color-primary-dark); margin-top: 6px">
               Transparansi Keuntungan Pembelian Unit Absoora
             </h3>
-            <p style="font-size: 0.92rem; color: var(--color-text-body); max-width: 600px;">
-              Seluruh transaksi diikat langsung oleh Notaris resmi. Harga Rp 777 Juta sudah mengcover seluruh biaya berkas hingga serah terima kunci.
+            <p style="font-size: var(--fs-base); color: var(--color-text-body); max-width: 600px">
+              Seluruh transaksi diikat langsung oleh Notaris resmi. Harga Rp 777 juta sudah mengcover seluruh biaya berkas hingga serah terima kunci.
             </p>
           </div>
-          <div style="background: var(--color-mint-bg); border: 1px solid var(--color-mint-border); padding: 10px 18px; border-radius: var(--radius-md); text-align: right;">
-            <div style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 700;">TOTAL ESTIMASI HEMAT</div>
-            <div style="font-size: 1.35rem; font-weight: 800; color: var(--color-emerald);">± Rp 65.000.000,-</div>
+          <div style="background: var(--color-mint-bg); border: 1px solid var(--color-mint-border); padding: 10px 18px; border-radius: var(--radius-md); text-align: right">
+            <div style="font-size: var(--fs-xs); color: var(--color-text-muted); font-weight: 700">TOTAL ESTIMASI HEMAT</div>
+            <div style="font-size: var(--fs-lg); font-weight: 800; color: var(--color-emerald)">± Rp 65 juta</div>
           </div>
         </div>
 
@@ -197,7 +194,7 @@
       </div>
 
       <!-- Pre-footer CTA Box -->
-      <div class="pre-footer-banner" style="margin-top: 3.5rem;">
+      <div style="margin-top: 3.5rem" class="pre-footer-banner">
         <div class="pre-footer-content">
           <span class="badge badge-warning">Marketing Gallery Samata Boulevard</span>
           <h2 class="pre-footer-title">Rencanakan Kunjungan Show Unit & Konsultasi Finansial Langsung</h2>
@@ -214,8 +211,8 @@
               Hubungi Concierge Langsung
             </a>
           </div>
-          <div style="margin-top: 1.5rem; font-size: 0.82rem; color: #a7f3d0;">
-            🕒 Buka Setiap Hari: 09:00 - 18:00 WITA | Tersedia Fasilitas Parkir Luas & Private Lounge
+          <div class="note-on-dark">
+            <span class="ico" data-icon="clock"></span>Buka Setiap Hari: 09:00 - 18:00 WITA | Tersedia Fasilitas Parkir Luas & Private Lounge
           </div>
         </div>
       </div>
@@ -228,15 +225,15 @@
       <div class="footer-grid">
         <!-- Col 1: Brand Info -->
         <div>
-          <div class="header-brand" style="margin-bottom: 1rem;">
+          <div class="header-brand mb-16">
             <img src="assets/images/logo.png" alt="Logo Absoora" class="brand-logo-img">
             <div class="brand-info">
               <span class="brand-name">Absoora Residence</span>
               <span class="brand-sub">Managed by Agang Collective Property Asset</span>
             </div>
           </div>
-          <p style="font-size: 0.92rem; color: var(--color-text-body); line-height: 1.6; max-width: 360px;">
-            Kawasan residensial boutique eksklusif di koridor emas Samata Boulevard, memadukan arsitektur tropis modern dan ketenangan hidup berkelanjutan.
+          <p class="footer-blurb">
+            Kawasan residensial boutique di koridor Samata Boulevard, Gowa. Where comfort meets class.
           </p>
         </div>
 
@@ -256,15 +253,15 @@
           <h4 class="footer-col-title">Hubungi Kami</h4>
           <div class="footer-contact-items">
             <div class="footer-contact-row">
-              <span>📍</span>
+              <span><span class="ico" data-icon="pin"></span></span>
               <span>Jl. Samata Boulevard, Poros Kampus UIN, Gowa - Sulawesi Selatan</span>
             </div>
             <div class="footer-contact-row">
-              <span>📞</span>
+              <span><span class="ico" data-icon="phone"></span></span>
               <span>+62 811-4420-800 / WhatsApp: +62 878-9051-8616</span>
             </div>
             <div class="footer-contact-row">
-              <span>✉️</span>
+              <span><span class="ico" data-icon="mail"></span></span>
               <span>concierge@absoora.id</span>
             </div>
           </div>
@@ -278,8 +275,8 @@
           <span>© 2025 - 2026 Absoora Residence. Managed by Agang Collective. Hak Cipta Dilindungi.</span>
         </div>
         <div class="footer-legal-links">
-          <a href="#">Privasi</a>
-          <a href="#">Syarat & Ketentuan</a>
+          <a href="legal.html#privasi">Privasi</a>
+          <a href="legal.html#syarat">Syarat &amp; Ketentuan</a>
         </div>
       </div>
     </div>
